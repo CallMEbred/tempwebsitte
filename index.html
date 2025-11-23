@@ -12,10 +12,10 @@
       background: #0b0d12;
       color: #e6e9ef;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
-      text-align: center;
       padding: 20px;
     }
     .card {
@@ -25,6 +25,8 @@
       max-width: 420px;
       width: 100%;
       box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+      text-align: center;
     }
     h1 {
       margin: 0 0 12px;
@@ -38,8 +40,8 @@
       color: #cfd6e4;
     }
     .links a {
-      display: inline-block;
-      margin: 6px 10px;
+      display: block;
+      margin: 8px 0;
       padding: 10px 16px;
       border-radius: 8px;
       text-decoration: none;
@@ -60,18 +62,24 @@
   </style>
 </head>
 <body>
+  <!-- About Section -->
   <div class="card">
     <h1>About Me</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare velit. 
       Sed vitae tortor a augue sollicitudin efficitur.
     </p>
+    <small>© 2025 • Nondescript Profile</small>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="card">
+    <h1>Contact</h1>
     <div class="links">
       <a href="mailto:example@email.com">Email</a>
       <a href="https://linkedin.com">LinkedIn</a>
       <a href="https://yourwebsite.com">Website</a>
     </div>
-    <small>© 2025 • Nondescript Profile</small>
   </div>
 </body>
 </html>
